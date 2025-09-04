@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "363f2729-945c-4b3b-9b16-318a91b30730",
+		"name": "AgendaCIA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48031352"
+	},
+	"item": [
+		{
+			"name": "Seguimiento",
+			"item": [
+				{
+					"name": "Crear Seguimiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreEmpresa\": \"CIA S:A\",\r\n    \"contacto\": \"Cristian Rosas\",\r\n    \"telefono\": \"+502 1234 5678\",\r\n    \"correo\": \"crosas@CIAs.com\",\r\n    \"dedicacion\": \"Tecnología\",\r\n    \"sistemas\": [\"ERP SAP\", \"CRM Salesforce\", \"Google Workspace\"],\r\n    \"tamanoEmpresa\": \"Mediana (51-200 empleados)\",\r\n    \"desafios\": [\"Digitalización de procesos\", \"Escalabilidad de infraestructura IT\"],\r\n    \"puntosCriticos\": [\"Falta de integración entre sistemas\", \"Presupuesto limitado\"],\r\n    \"objetivos\": [\"Aumentar eficiencia operativa en 20%\", \"Implementar solución de IA\"],\r\n    \"comportamientoCompra\": \"Innovador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/AgendaCIA/v1/seguimientos/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"AgendaCIA",
+								"v1",
+								"seguimientos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerSeguimiento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/AgendaCIA/v1/seguimientos/obtener",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"AgendaCIA",
+								"v1",
+								"seguimientos",
+								"obtener"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerEspecifico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/AgendaCIA/v1/seguimientos/obtener/68b724221bcba29eaa907ed4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"AgendaCIA",
+								"v1",
+								"seguimientos",
+								"obtener",
+								"68b724221bcba29eaa907ed4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarEspecifico",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreEmpresa\": \"TechSolutions SA\",\r\n    \"contacto\": \"Hector Mauricioz\",\r\n    \"telefono\": \"+502 1234 5678\",\r\n    \"correo\": \"maria.gonzalez@techsolutions.com\",\r\n    \"dedicacion\": \"Tecnología\",\r\n    \"sistemas\": [\"ERP SAP\", \"CRM Salesforce\", \"Google Workspace\"],\r\n    \"tamanoEmpresa\": \"Mediana (51-200 empleados)\",\r\n    \"desafios\": [\"Digitalización de procesos\", \"Escalabilidad de infraestructura IT\"],\r\n    \"puntosCriticos\": [\"Falta de integración entre sistemas\", \"Presupuesto limitado\"],\r\n    \"objetivos\": [\"Aumentar eficiencia operativa en 20%\", \"Implementar solución de IA\"],\r\n    \"comportamientoCompra\": \"Innovador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/AgendaCIA/v1/seguimientos/actualizar/68b724221bcba29eaa907ed4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"AgendaCIA",
+								"v1",
+								"seguimientos",
+								"actualizar",
+								"68b724221bcba29eaa907ed4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarEspecifico",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/AgendaCIA/v1/seguimientos/eliminar/68b724221bcba29eaa907ed4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"AgendaCIA",
+								"v1",
+								"seguimientos",
+								"eliminar",
+								"68b724221bcba29eaa907ed4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarNombreEmpresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/AgendaCIA/v1/seguimientos/buscar/empresa?nombre=TechSolutions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"AgendaCIA",
+								"v1",
+								"seguimientos",
+								"buscar",
+								"empresa"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "TechSolutions"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Prueba",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost3000/AgendaCIA/v1/seguimientos/buscar/dedicacion?dedicacion=Tecnología",
+							"protocol": "http",
+							"host": [
+								"localhost3000"
+							],
+							"path": [
+								"AgendaCIA",
+								"v1",
+								"seguimientos",
+								"buscar",
+								"dedicacion"
+							],
+							"query": [
+								{
+									"key": "dedicacion",
+									"value": "Tecnología"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,173 @@
+[{
+  "_id": {
+    "$oid": "68b724221bcba29eaa907ed4"
+  },
+  "nombreEmpresa": "TechSolutions SA",
+  "contacto": "Hector Mauricioz",
+  "telefono": "+502 1234 5678",
+  "correo": "maria.gonzalez@techsolutions.com",
+  "dedicacion": "Tecnología",
+  "sistemas": [
+    "ERP SAP",
+    "CRM Salesforce",
+    "Google Workspace"
+  ],
+  "tamanoEmpresa": "Mediana (51-200 empleados)",
+  "desafios": [
+    "Digitalización de procesos",
+    "Escalabilidad de infraestructura IT"
+  ],
+  "puntosCriticos": [
+    "Falta de integración entre sistemas",
+    "Presupuesto limitado"
+  ],
+  "objetivos": [
+    "Aumentar eficiencia operativa en 20%",
+    "Implementar solución de IA"
+  ],
+  "comportamientoCompra": "Innovador",
+  "estado": false,
+  "createdAt": {
+    "$date": "2025-09-02T17:06:42.651Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-02T17:19:26.015Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b726761bcba29eaa907edc"
+  },
+  "nombreEmpresa": "Consultoria Informatica Avanzada S.A",
+  "contacto": "Edwin Oliveros",
+  "telefono": "+502 1234 5678",
+  "correo": "crosas@cias.com",
+  "dedicacion": "Tecnología",
+  "sistemas": [
+    "ERP SAP",
+    "CRM Salesforce",
+    "Google Workspace"
+  ],
+  "tamanoEmpresa": "pequeña",
+  "desafios": [
+    "Digitalización de procesos",
+    "Escalabilidad de infraestructura IT"
+  ],
+  "puntosCriticos": [
+    "Falta de integración entre sistemas",
+    "Presupuesto limitado"
+  ],
+  "objetivos": [
+    "Aumentar eficiencia operativa en 20%",
+    "Implementar solución de IA"
+  ],
+  "comportamientoCompra": "Innovador",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-09-02T17:16:38.940Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-02T21:43:05.782Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b75bb749b69158dca586f3"
+  },
+  "nombreEmpresa": "Multiservicios STS",
+  "contacto": "Carlorene Rosas",
+  "telefono": "+502 5634 0802",
+  "correo": "multiservicios.sts@gmail.com",
+  "dedicacion": "Empresa dedicada a la seguridad",
+  "sistemas": [
+    "dahua",
+    "hikvision"
+  ],
+  "tamanoEmpresa": "mediana",
+  "desafios": [
+    "posicionarse como lideres en la industria"
+  ],
+  "puntosCriticos": [
+    "personal"
+  ],
+  "objetivos": [
+    "Crecer como empresa"
+  ],
+  "comportamientoCompra": "Innovador",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-09-02T21:03:51.910Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-02T21:03:51.910Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b761757f26d39398d42560"
+  },
+  "nombreEmpresa": "Inovadores S:A",
+  "contacto": "Hector Mauricio",
+  "telefono": "+502 3699 5236",
+  "correo": "hcordero@gmail.com",
+  "dedicacion": "Informatica",
+  "sistemas": [
+    "Node.js",
+    "java",
+    "javaScript",
+    "Mongo"
+  ],
+  "tamanoEmpresa": "Grande",
+  "desafios": [
+    "Escalar a la sima de las demas empresas"
+  ],
+  "puntosCriticos": [
+    "Organizacion",
+    "personal"
+  ],
+  "objetivos": [
+    "brindar ayuda a toda empresa o persona que lo necesite"
+  ],
+  "comportamientoCompra": "Futurista",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-09-02T21:28:21.062Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-02T21:31:45.173Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68b764ae7f26d39398d42573"
+  },
+  "nombreEmpresa": "Pizza Siciliana",
+  "contacto": "Jeny Vargas",
+  "telefono": "+502 8471 9875",
+  "correo": "jeny.va@gmail.com",
+  "dedicacion": "Pizzeria",
+  "sistemas": [
+    "Fortinets",
+    "sophos",
+    "SAP"
+  ],
+  "tamanoEmpresa": "mediana",
+  "desafios": [
+    "prueba de desafio"
+  ],
+  "puntosCriticos": [
+    "precios",
+    "tecnologias"
+  ],
+  "objetivos": [
+    "venderle pizza a todas las personas"
+  ],
+  "comportamientoCompra": "conservadora",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-09-02T21:42:06.519Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-02T21:42:06.519Z"
+  }
+}]
