@@ -31,15 +31,20 @@ const conectarDB = async () => {
 
 export const initServer = async () => {
     const app = express();
-    const port = process.env.PORT || 2900;
-
     try {
         middlewares(app);
         await conectarDB(); 
         routes(app);
-        app.listen(port);
-        console.log(`Server running on port ${port}!`);
+        return app;
     } catch (err) {
         console.log(`Server init failed: ${err}!`);
+        throw err;
     }
+}
+
+// Exporta el handler para Vercel
+const appPromise = initServer();
+export default async function handler(req, res) {
+    const app = await appPromise;
+    app(req, res);
 }
