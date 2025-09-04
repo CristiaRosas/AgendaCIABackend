@@ -27,14 +27,12 @@ export const dbConnection = async () => {
             console.log('MongoDB | disconnected ');
         })
 
-        await mongoose.connect(
-
-            `${process.env.DB_SERVICE}://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`,
-            {
-                maxPoolSize: 50,
-                serverSelectionTimeoutMS: 5000
-            }
-        )
+        await mongoose.connect(process.env.MONGO_URI, {
+            maxPoolSize: 50,
+            serverSelectionTimeoutMS: 5000,
+            socketTimeoutMS: 45000,
+            connectTimeoutMS: 30000
+        })
 
     } catch (error) {
         console.log('data base error', error);
